@@ -1,0 +1,9 @@
+2018-01-22 19:39:05,893 - ERROR - 'gbk' codec can't encode character '\u02c6' in position 15: illegal multibyte sequence
+Traceback (most recent call last):
+  File "E:\millionhero\MillionHeroAssistant-master\MillionHeroAssistant-master\main.py", line 219, in main
+    __inner_job()
+  File "E:\millionhero\MillionHeroAssistant-master\MillionHeroAssistant-master\main.py", line 209, in __inner_job
+    save_question_answers_to_file(real_question, answers, directory=data_directory)
+  File "E:\millionhero\MillionHeroAssistant-master\MillionHeroAssistant-master\utils\backup.py", line 14, in save_question_answers_to_file
+    baker.write(";".join([question, ",".join(answers)]) + "\n")
+UnicodeEncodeError: 'gbk' codec can't encode character '\u02c6' in position 15: illegal multibyte sequence
